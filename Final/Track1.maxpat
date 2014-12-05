@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 382.0, 212.0, 618.0, 567.0 ],
+		"rect" : [ 166.0, 169.0, 618.0, 567.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 620.0, -24.0, 79.0, 22.0 ],
+					"patching_rect" : [ 525.0, -35.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "receive reset"
 				}
@@ -109,7 +109,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 165.0, 76.0, 22.0 ],
+					"patching_rect" : [ 0.0, 205.0, 76.0, 22.0 ],
 					"style" : "",
 					"text" : "send~ audio"
 				}
@@ -126,7 +126,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "bank1.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
@@ -140,7 +140,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 

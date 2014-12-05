@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 679.0, 480.0 ],
+		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -88,7 +88,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -9.0, -35.0, 25.0, 25.0 ],
+					"patching_rect" : [ -1.0, -35.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -96,11 +96,12 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
+					"hidden" : 1,
 					"id" : "obj-7",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ -1.0, 241.0, 25.0, 25.0 ],
+					"patching_rect" : [ -1.0, 249.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -194,21 +195,22 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
+					"hidden" : 1,
 					"id" : "obj-45",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 246.0, 200.0, 85.0, 23.0 ],
+					"patching_rect" : [ 246.0, 200.0, 78.0, 23.0 ],
 					"style" : "",
-					"text" : "set track7 7"
+					"text" : "set track9 9"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bgcolor" : [ 0.75, 0.75, 0.75, 1.0 ],
-					"buffername" : "track7",
+					"buffername" : "track9",
 					"fontsize" : 13.0,
 					"grid" : 500.0,
 					"gridcolor" : [ 0.423529, 0.423529, 0.423529, 1.0 ],
@@ -236,7 +238,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 68.0, 168.0, 37.0, 23.0 ],
+					"patching_rect" : [ 57.0, 272.0, 37.0, 23.0 ],
 					"style" : "",
 					"text" : "read"
 				}
@@ -259,8 +261,10 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
+					"hidden" : 1,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -268,12 +272,13 @@
 					"outlettype" : [ "float", "bang" ],
 					"patching_rect" : [ 148.028931, 200.0, 90.0, 23.0 ],
 					"style" : "",
-					"text" : "buffer~ track7"
+					"text" : "buffer~ track9"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-36",
@@ -298,7 +303,7 @@
 					}
 ,
 					"style" : "",
-					"text" : "groove~ track7"
+					"text" : "groove~ track9"
 				}
 
 			}
@@ -307,7 +312,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -399,7 +404,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
-					"midpoints" : [ 77.5, 108.5, 157.528931, 108.5 ],
+					"midpoints" : [ 66.5, 108.5, 157.528931, 108.5 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -428,7 +433,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-43", 0 ],
 					"disabled" : 0,
-					"hidden" : 0,
+					"hidden" : 1,
 					"midpoints" : [ 255.5, 221.0, -91.0, 221.0, -91.0, 40.0, 8.5, 40.0 ],
 					"source" : [ "obj-45", 0 ]
 				}
